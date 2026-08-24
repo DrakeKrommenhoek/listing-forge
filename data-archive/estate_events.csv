@@ -1,0 +1,100 @@
+id,item_id,event_type,actor,detail,created_at
+c7ab193a-7466-4e54-b5a0-efd9e896c5fc,DK-202608-001,item_created,telegram:<redacted>,{},2026-08-02 22:47:28
+cbd49cce-e7b3-4556-a972-7572bdb68ceb,DK-202608-002,item_created,telegram:<redacted>,{},2026-08-02 22:55:57
+161651b4-be43-46ef-8bd4-1e6b735a2e80,DK-202608-002,item_updated,vision:mock,"{""changed"": [""item_name"", ""category"", ""description""]}",2026-08-02 22:56:36
+6ecfe70a-ccea-4ba7-9e85-211ddc4b556b,DK-202608-002,vision_identified,vision:mock,"{""provider"": ""mock"", ""confidence"": 0.1, ""missing"": [""brand"", ""model"", ""condition"", ""defects"", ""dimensions"", ""included_accessories"", ""approximate_age"", ""location_in_house""]}",2026-08-02 22:56:36
+78e75f05-2efd-4776-b323-3e8894357a59,DK-202608-002,item_updated,submitter,"{""changed"": [""brand""]}",2026-08-02 22:56:47
+1966787b-71d1-42a8-8209-ed314a0ada9c,DK-202608-002,item_updated,submitter,"{""changed"": [""condition""]}",2026-08-02 22:57:13
+909d4525-8760-4afe-a9fb-e35f136cafcb,DK-202608-002,item_updated,submitter,"{""changed"": [""defects""]}",2026-08-02 22:57:16
+5b57db6e-9a80-4a83-93ad-c3655ea35aa0,DK-202608-002,item_updated,submitter,"{""changed"": [""included_accessories""]}",2026-08-02 22:57:26
+ab08ce15-2f13-4bba-9e71-5b2601feec96,DK-202608-002,item_updated,submitter,"{""changed"": [""location_in_house""]}",2026-08-02 22:57:36
+66f53922-5a6a-4b69-aa83-7b2fb9580715,DK-202608-002,item_updated,system,"{""changed"": [""weight_lbs"", ""required_vehicle"", ""shipping_feasible"", ""pickup_required""]}",2026-08-02 22:57:36
+64c3083f-dd16-4f29-8703-b1dabee66f77,DK-202608-002,status_changed,system,"{""from"": ""Draft"", ""to"": ""Needs Review"", ""reason"": ""intake complete""}",2026-08-02 22:57:36
+25a5a5d6-678b-41cb-a8ba-8fe2e9f2f7d5,DK-202608-002,worksheet_created,system,"{""path"": ""<redacted-path>/data/inventory/DK-202608-002/research/DK-202608-002_comps.csv""}",2026-08-02 22:57:36
+e3e7a4fb-9c23-40c7-8477-c3478b3ed70e,DK-202608-003,item_created,telegram:<redacted>,{},2026-08-03 03:57:02
+377dedda-5944-4c67-8bdc-3f95efcdc697,DK-202608-003,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-03 04:00:39
+4144898d-b853-4460-92bf-de3d2eb5e9fe,DK-202608-003,item_updated,vision:mock,"{""changed"": [""item_name"", ""category"", ""description""]}",2026-08-03 04:00:39
+1ca2d82b-df85-4f32-9d44-521a39971c31,DK-202608-003,vision_identified,vision:mock,"{""provider"": ""mock"", ""confidence"": 0.1, ""missing"": [""brand"", ""model"", ""condition"", ""defects"", ""dimensions"", ""included_accessories"", ""approximate_age"", ""location_in_house"", ""ownership_approval"", ""shipping_feasible""], ""cost_usd"": 0.0, ""processing_seconds"": 0.0002}",2026-08-03 04:00:39
+bc33889f-59c8-44a0-82da-bb96f3a0b3eb,DK-202608-003,item_updated,hint_parser,"{""changed"": [""condition"", ""defects""]}",2026-08-03 04:00:39
+c65f8860-8d63-4141-809a-d549e9cbf898,DK-202608-003,hint_parsed,hint_parser,"{""resolved"": [""condition"", ""defects""], ""patterns"": [""condition='Excellent' ('excellent condition')"", ""defects extracted from 1 clause(s)""]}",2026-08-03 04:00:39
+40e208b3-1630-4e0a-a237-b23a35495ddf,DK-202608-003,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-03 04:00:39
+424cc7c9-61d7-4b3a-9dd5-d3829999acdf,DK-202608-003,item_updated,submitter,"{""changed"": [""brand""]}",2026-08-03 04:01:05
+3df873f8-f648-4705-818f-a879598e8a81,DK-202608-003,item_updated,submitter,"{""changed"": [""model""]}",2026-08-03 04:01:13
+d66ca1ee-e5de-4537-b507-1d364293f1c8,DK-202608-003,item_updated,submitter,"{""changed"": [""dimensions""]}",2026-08-03 04:01:33
+d17ebd0b-6167-4eac-86e0-443f165df8a6,DK-202608-003,item_updated,submitter,"{""changed"": [""included_accessories""]}",2026-08-03 04:01:38
+f7db6151-481d-43a7-b84e-752e9e3de408,DK-202608-003,item_updated,submitter,"{""changed"": [""location_in_house""]}",2026-08-03 04:01:47
+4715295f-de27-4ad1-b70e-75c83752baaa,DK-202608-003,item_updated,submitter,"{""changed"": [""ownership_approval""]}",2026-08-03 04:01:56
+50332402-c46c-4202-a1c0-5f464fbc7ca1,DK-202608-003,item_updated,submitter,"{""changed"": [""shipping_feasible""]}",2026-08-03 04:02:14
+3775d270-c59e-48ee-8ab8-3fbdba34798d,DK-202608-003,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-03 04:02:14
+5eff5f62-8a95-4c06-b3c7-e599feb5958b,DK-202608-003,item_updated,system,"{""changed"": [""weight_lbs"", ""required_vehicle"", ""pickup_required""]}",2026-08-03 04:02:14
+3d8a81d5-172a-49d7-9154-68022c0b4b15,DK-202608-003,item_updated,system,"{""changed"": [""research_status""]}",2026-08-03 04:02:14
+997db860-2cab-4838-abe1-d4ff77d8f26e,DK-202608-003,status_changed,system,"{""from"": ""Draft"", ""to"": ""Needs Review"", ""reason"": ""intake complete""}",2026-08-03 04:02:14
+24a2753d-08e3-4d97-8155-92ab4042f35f,DK-202608-003,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-03 04:02:14
+9f15952e-e8ad-4e31-ae0a-0092c1990609,DK-202608-003,worksheet_created,system,"{""path"": ""<redacted-path>/data/inventory/DK-202608-003/research/DK-202608-003_comps.csv"", ""research_provider"": ""manual_queue"", ""proposed_comparables"": 0}",2026-08-03 04:02:14
+a226702e-1f8d-47a3-8d11-e7296c1468c4,DK-202608-003,item_updated,reviewer:web,"{""changed"": [""review_status""]}",2026-08-03 06:37:04
+3a938fdf-b645-42e7-85c2-210d227bfd9c,DK-202608-003,research_requested,reviewer:web,"{""note"": """"}",2026-08-03 06:37:04
+f9e1b425-f5dc-43bb-a3f0-a750e0e1ae9d,DK-202608-001,item_updated,orchestrator,"{""changed"": [""selling_difficulty"", ""shipping_difficulty"", ""priority_score"", ""priority_reasons""]}",2026-08-05 05:44:42
+4b8f17a4-038d-469b-b6cd-1a7e28806815,DK-202608-002,item_updated,orchestrator,"{""changed"": [""selling_difficulty"", ""shipping_difficulty"", ""priority_score"", ""priority_reasons""]}",2026-08-05 05:44:42
+4cf657a3-94a8-4512-9a45-8407dd1aa7e8,DK-202608-003,item_updated,orchestrator,"{""changed"": [""selling_difficulty"", ""shipping_difficulty"", ""priority_score"", ""priority_reasons""]}",2026-08-05 05:44:42
+8c103a30-46be-4f87-aa89-61820ee53538,DK-202608-004,item_created,telegram:<redacted>,{},2026-08-07 19:50:26
+20edd554-4d41-495f-9af2-7d9201fbf1ff,DK-202608-004,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 19:54:55
+bd8721b2-c18f-4c34-88d8-ad06bd7c64a4,DK-202608-004,item_updated,vision:openai,"{""changed"": [""item_name"", ""category"", ""brand"", ""subcategory"", ""description"", ""condition"", ""defects""]}",2026-08-07 19:55:04
+a71c016d-ca34-4cf1-8097-6be0212334b6,DK-202608-004,vision_identified,vision:openai,"{""provider"": ""openai"", ""confidence"": 0.85, ""missing"": [""model"", ""defects"", ""dimensions"", ""included_accessories"", ""approximate_age"", ""location_in_house"", ""ownership_approval"", ""shipping_feasible""], ""cost_usd"": 0.02, ""processing_seconds"": 8.23}",2026-08-07 19:55:04
+9a52e5ce-9706-4931-a2ef-a160238422b0,DK-202608-004,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 19:55:04
+bf2419b7-5217-4af8-86dd-89dc73b5aabd,DK-202608-004,item_updated,submitter,"{""changed"": [""model""]}",2026-08-07 19:56:48
+3fe07aa3-7157-49a9-a773-d25c5bc94cf7,DK-202608-004,item_updated,submitter,"{""changed"": [""defects""]}",2026-08-07 19:57:12
+4da35b7d-2de9-4f9a-a459-5ab61f34f79a,DK-202608-004,item_updated,submitter,"{""changed"": [""dimensions""]}",2026-08-07 19:57:34
+5dbfd131-ce0f-4d7d-ad44-ee40ccd1cce4,DK-202608-004,item_updated,submitter,"{""changed"": [""included_accessories""]}",2026-08-07 19:57:39
+87e45074-341e-4a41-b1ce-1e70465a1647,DK-202608-004,item_updated,submitter,"{""changed"": [""location_in_house""]}",2026-08-07 20:02:24
+5ff7d3a4-c02d-49f8-8595-b4adbdee9fe2,DK-202608-004,item_updated,submitter,"{""changed"": [""ownership_approval""]}",2026-08-07 20:02:31
+60e47ddf-5a27-4c9d-8919-925f97f9e352,DK-202608-004,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:02:39
+e83122af-d38d-4812-9b3e-555721bf2c2b,DK-202608-004,item_updated,system,"{""changed"": [""weight_lbs"", ""required_vehicle"", ""people_required"", ""pickup_difficulty""]}",2026-08-07 20:02:39
+7a26cb54-aa0a-4cdc-983c-4b4edd2843f8,DK-202608-004,item_updated,system,"{""changed"": [""research_status""]}",2026-08-07 20:02:39
+42a17061-1551-44f6-a7ff-2cff7eb9c73b,DK-202608-004,status_changed,system,"{""from"": ""Draft"", ""to"": ""Needs Review"", ""reason"": ""intake complete""}",2026-08-07 20:02:39
+1d918ecd-9b8a-4dfa-903f-5003bb8927bc,DK-202608-004,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:02:39
+3fe28e77-c3c6-4583-868c-bd4778282367,DK-202608-004,worksheet_created,system,"{""path"": ""<redacted-path>/data/inventory/DK-202608-004/research/DK-202608-004_comps.csv"", ""research_provider"": ""manual_queue"", ""proposed_comparables"": 0}",2026-08-07 20:02:39
+7e3a2e86-20b0-4238-b5fa-7484e563f9b4,DK-202608-004,item_updated,orchestrator,"{""changed"": [""processing_stage"", ""last_activity""]}",2026-08-07 20:02:39
+bf06fcd8-ca5d-4401-811e-59c31c687215,DK-202608-004,item_updated,orchestrator,"{""changed"": [""research_date""]}",2026-08-07 20:02:39
+dbe20af9-51bd-4e3d-9f2a-74ba63ca1551,DK-202608-004,item_updated,orchestrator,"{""changed"": [""research_blockers""]}",2026-08-07 20:02:39
+c36dea15-2fb2-4387-8f1b-c8d1c0e3d33e,DK-202608-004,research_ran,orchestrator,"{""comparables_added"": 0, ""comparables_rejected"": 0, ""total_comparables"": 0, ""confidence"": ""Insufficient Evidence""}",2026-08-07 20:02:39
+d166b869-fbbc-41e0-845a-ba002c13e32b,DK-202608-004,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:02:39
+cb7b30ed-3eda-4e82-9193-28a2f6d42734,DK-202608-004,pricing_skipped,orchestrator,"{""reason"": ""insufficient evidence"", ""comparables"": 0}",2026-08-07 20:02:39
+d48556f9-1e8a-4f67-8589-bbaf0cf0915b,DK-202608-004,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:02:39
+558685da-3018-4e69-833b-a6a098f7e96b,DK-202608-004,item_updated,orchestrator,"{""changed"": [""primary_marketplace"", ""secondary_marketplaces"", ""listing_title"", ""listing_description"", ""keywords""]}",2026-08-07 20:02:39
+981c1284-8be0-47cc-88cd-42d3e7d42cd6,DK-202608-004,listings_generated,orchestrator,"{""platforms"": [""craigslist"", ""facebook_marketplace"", ""nextdoor"", ""offerup"", ""website""], ""primary"": ""Facebook Marketplace""}",2026-08-07 20:02:39
+98a04db3-97eb-45f7-9f8f-865fd11c1e6f,DK-202608-004,item_updated,orchestrator,"{""changed"": [""approval_blockers""]}",2026-08-07 20:02:39
+1f76da60-2842-43c6-952e-c873191c74a7,DK-202608-004,status_changed,orchestrator,"{""from"": ""Needs Review"", ""to"": ""Needs Review"", ""reason"": ""automated processing complete""}",2026-08-07 20:02:39
+00b515b2-2233-42a2-85c1-9a1fba9430eb,DK-202608-004,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:02:39
+9b1ded75-b4e4-4c39-873c-9143a53f98f5,DK-202608-004,item_updated,orchestrator,"{""changed"": [""last_processed_at""]}",2026-08-07 20:02:39
+832acb9e-2262-4262-bf5f-e75de0efa1a5,DK-202608-004,item_updated,orchestrator,"{""changed"": [""selling_difficulty"", ""shipping_difficulty"", ""priority_score"", ""priority_reasons""]}",2026-08-07 20:02:39
+77d8880a-2884-479c-83ae-b2a19cbb044e,DK-202608-004,processing_complete,orchestrator,"{""blockers"": [""No comparable evidence recorded. Fill in the comps worksheet before pricing.""], ""stages"": [""Researching"", ""Pricing"", ""Generating Listings"", ""Ready for Review""]}",2026-08-07 20:02:39
+1effd51e-a89c-4240-b408-8f35f77459dd,DK-202608-005,item_created,telegram:<redacted>,{},2026-08-07 20:05:39
+74196221-bbf8-4887-96ed-431182757fb2,DK-202608-005,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:06:18
+a0299784-85f6-4910-ae7e-fe45236907d8,DK-202608-005,item_updated,vision:openai,"{""changed"": [""item_name"", ""category"", ""brand"", ""collection"", ""subcategory"", ""description"", ""condition""]}",2026-08-07 20:06:29
+1cdf5c59-9148-4664-b7ff-d73abfa203f7,DK-202608-005,vision_identified,vision:openai,"{""provider"": ""openai"", ""confidence"": 0.85, ""missing"": [""model"", ""defects"", ""dimensions"", ""included_accessories"", ""approximate_age"", ""location_in_house"", ""ownership_approval"", ""shipping_feasible""], ""cost_usd"": 0.02, ""processing_seconds"": 10.296}",2026-08-07 20:06:29
+fe53d1e4-7ce1-4594-bcb0-475d3e6a0763,DK-202608-005,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:06:29
+75fbec01-52db-4c6d-b896-a88f9c4a1dd6,DK-202608-005,item_updated,submitter,"{""changed"": [""defects""]}",2026-08-07 20:50:43
+583fa05a-f422-49c2-91d9-3ee34a67cd39,DK-202608-005,item_updated,submitter,"{""changed"": [""included_accessories""]}",2026-08-07 20:50:52
+fc622de8-3dcb-4422-a671-e352b6f1682f,DK-202608-005,item_updated,submitter,"{""changed"": [""location_in_house""]}",2026-08-07 20:51:01
+14c2dab6-d6c9-4e74-88ec-eebd6aa363aa,DK-202608-005,item_updated,submitter,"{""changed"": [""ownership_approval""]}",2026-08-07 20:51:04
+9f176725-7142-41e4-8ca2-16a91c04d8fd,DK-202608-005,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:51:07
+747869cc-3be7-4b66-a363-b254e06a833b,DK-202608-005,item_updated,system,"{""changed"": [""weight_lbs"", ""required_vehicle"", ""people_required"", ""pickup_difficulty""]}",2026-08-07 20:51:07
+54f4a99d-5444-4a4d-8451-01fc854aea07,DK-202608-005,item_updated,system,"{""changed"": [""research_status""]}",2026-08-07 20:51:07
+dd2560d9-d38b-448c-bdeb-29c6cb7a5f01,DK-202608-005,status_changed,system,"{""from"": ""Draft"", ""to"": ""Needs Review"", ""reason"": ""intake complete""}",2026-08-07 20:51:07
+b8c37007-8884-4ec8-913a-1c88d4062442,DK-202608-005,item_updated,system,"{""changed"": [""processing_stage""]}",2026-08-07 20:51:07
+a1dbe5df-eeea-47a0-8178-6c4527679853,DK-202608-005,worksheet_created,system,"{""path"": ""<redacted-path>/data/inventory/DK-202608-005/research/DK-202608-005_comps.csv"", ""research_provider"": ""manual_queue"", ""proposed_comparables"": 0}",2026-08-07 20:51:07
+f80123b4-aa8b-4642-b933-239c4855a4df,DK-202608-005,item_updated,orchestrator,"{""changed"": [""processing_stage"", ""last_activity""]}",2026-08-07 20:51:07
+8c2e08f9-6ab1-49d4-8f12-3f1ab9a379ea,DK-202608-005,item_updated,orchestrator,"{""changed"": [""research_date""]}",2026-08-07 20:51:07
+7b4a94b1-01db-4583-ba8a-20f0e6c1feca,DK-202608-005,item_updated,orchestrator,"{""changed"": [""research_blockers""]}",2026-08-07 20:51:07
+3afadcdf-8a68-4f3a-ab94-af9bcc26707b,DK-202608-005,research_ran,orchestrator,"{""comparables_added"": 0, ""comparables_rejected"": 0, ""total_comparables"": 0, ""confidence"": ""Insufficient Evidence""}",2026-08-07 20:51:07
+3a877cb5-84ad-473d-87bb-a0d15243b769,DK-202608-005,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:51:07
+1d5f7d17-1091-49ea-8fba-7a035d9795d2,DK-202608-005,pricing_skipped,orchestrator,"{""reason"": ""insufficient evidence"", ""comparables"": 0}",2026-08-07 20:51:07
+39270e4e-308e-4eb4-9530-5456dd7f08a5,DK-202608-005,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:51:07
+29acf3aa-5c3d-4a36-acbe-67ec47ae8b52,DK-202608-005,item_updated,orchestrator,"{""changed"": [""primary_marketplace"", ""secondary_marketplaces"", ""listing_title"", ""listing_description"", ""keywords""]}",2026-08-07 20:51:07
+786e5f96-b9c9-4fee-8e4f-d02772b82eb8,DK-202608-005,listings_generated,orchestrator,"{""platforms"": [""craigslist"", ""facebook_marketplace"", ""nextdoor"", ""offerup"", ""website""], ""primary"": ""Facebook Marketplace""}",2026-08-07 20:51:07
+0dd01583-7201-460b-b7e4-ea91eb6c0911,DK-202608-005,item_updated,orchestrator,"{""changed"": [""approval_blockers""]}",2026-08-07 20:51:07
+e25d337f-3c68-49a4-9f0c-b01d339a82d0,DK-202608-005,status_changed,orchestrator,"{""from"": ""Needs Review"", ""to"": ""Needs Review"", ""reason"": ""automated processing complete""}",2026-08-07 20:51:07
+cb08b216-855f-4cc3-82e2-84b660da4570,DK-202608-005,item_updated,orchestrator,"{""changed"": [""processing_stage""]}",2026-08-07 20:51:07
+8372c6b8-7536-469c-9427-1b03aed60e6e,DK-202608-005,item_updated,orchestrator,"{""changed"": [""last_processed_at""]}",2026-08-07 20:51:07
+8026f546-3ea7-46b1-8e83-8841c1256540,DK-202608-005,item_updated,orchestrator,"{""changed"": [""selling_difficulty"", ""shipping_difficulty"", ""priority_score"", ""priority_reasons""]}",2026-08-07 20:51:07
+207b4354-bd1a-4fea-8335-6feca2fdc9d8,DK-202608-005,processing_complete,orchestrator,"{""blockers"": [""No comparable evidence recorded. Fill in the comps worksheet before pricing.""], ""stages"": [""Researching"", ""Pricing"", ""Generating Listings"", ""Ready for Review""]}",2026-08-07 20:51:07
