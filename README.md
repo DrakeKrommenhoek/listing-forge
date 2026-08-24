@@ -102,3 +102,20 @@ This was extracted from inside the host app, not built to run alone. Concretely:
 - **No standalone entrypoint exists.** The host app's `main.py` wired FastAPI,
   Telegram, and the markdown cron together; that wiring wasn't extracted, so
   a small runner script would be needed to actually start this as a service.
+
+## What would make this worth reviving
+
+The problem manual posting didn't solve: pricing discipline over time, not
+listing itself. Writing five listings by hand in an evening is easy; deciding,
+three weeks later, which of forty items should mark down 10% versus 30%, and
+actually doing it before the deadline, is the part that gets skipped by hand.
+The markdown engine and floor enforcement are the pieces worth keeping. To
+become something a stranger could run, it would need real onboarding instead
+of a hand-picked Telegram submitter, a hosted multi-tenant database instead of
+one shared SQLite file, a real comp-research source instead of a manual queue,
+and a UI instead of a token-gated HTML page. Rebuilt today, I'd cut vision
+identification first — it was the most code for the least trust, an LLM
+guessing what an item is that a human has to check anyway — and put the saved
+effort into the markdown engine and the buyer inbox, which were the parts that
+actually worked. This is a note for a future me, not a pitch: worth revisiting
+only if a real second sale needs it, not because the code already exists.
