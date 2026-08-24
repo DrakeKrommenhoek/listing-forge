@@ -1,0 +1,115 @@
+{
+  "_comment": "Every threshold in the estate pricing engine. Edit this file, restart nothing - it is read per call. Percentages are fractions (0.15 = 15%).",
+
+  "price_bands": {
+    "_comment": "Applied to the median of the comparable set.",
+    "initial_list_multiplier": 1.15,
+    "expected_sale_multiplier": 0.92,
+    "floor_multiplier": 0.60,
+    "low_confidence_floor_multiplier": 0.45,
+    "round_to": 5,
+    "min_price": 5
+  },
+
+  "confidence": {
+    "_comment": "Score components sum to 1.0. Result maps through thresholds below.",
+    "weights": {
+      "sample_size": 0.25,
+      "similarity": 0.25,
+      "recency": 0.20,
+      "sold_evidence": 0.20,
+      "condition_match": 0.10
+    },
+    "sample_size_full_at": 6,
+    "sample_size_min": 3,
+    "recency_full_days": 45,
+    "recency_zero_days": 365,
+    "thresholds": {
+      "high": 0.75,
+      "medium": 0.55,
+      "low": 0.30
+    },
+    "placeholder_caps_at": "Low"
+  },
+
+  "deadline": {
+    "_comment": "Hard move-out and disposition deadline for this sale. The environment variable ESTATE_MOVE_OUT_DATE overrides this; the value here is the fallback so urgency still applies if the variable is missing. Everything must be sold, donated, or removed by this date.",
+    "move_out_date": "2026-08-31"
+  },
+
+  "markdown": {
+    "_comment": "Cadence and step size. Step is applied to the CURRENT price. Calibrated 2026-08-02 for the 2026-08-31 deadline: a 7-day first markdown and a 5-day interval fit roughly four markdown cycles into the window. Loosen both if the deadline moves out.",
+    "enabled": true,
+    "first_markdown_after_days": 7,
+    "interval_days": 5,
+    "base_step_pct": 0.10,
+    "max_total_markdown_pct": 0.55,
+    "modifiers": {
+      "no_inquiries_after_two_cycles": 0.05,
+      "many_inquiries_no_offers": 0.03,
+      "has_offer_above_floor": -0.10,
+      "high_value_item": -0.03,
+      "low_confidence_pricing": 0.03,
+      "hard_pickup": 0.04,
+      "urgent_deadline": 0.08
+    },
+    "high_value_threshold": 400,
+    "urgent_deadline_days": 21,
+    "deadline_endgame_days": 7,
+    "_deadline_endgame_note": "The endgame percentage is a FLOOR applied on top of the accumulated step, not a replacement for it. It must exceed base_step_pct plus the urgent_deadline modifier, or the final week would be gentler than the week before. Raised to 0.30 on 2026-08-02 for the 2026-08-31 hard deadline: in the last seven days the realistic alternative to a deep discount is a skip.",
+    "deadline_endgame_step_pct": 0.30
+  },
+
+  "bundle": {
+    "_comment": "Indicative multi-item discounts shown on the public catalogue. Tunable here without a deploy - the site generator reads this file at build time and bakes the resulting table into the pages. Tiers must be listed in ascending min_items order and ascending discount_pct order.",
+    "_floor_rule": "A bundle discount may NEVER take any selected item below its approved floor_price. Each item is published with a discount BAND - the index of the deepest tier that item can absorb without breaching its floor - and the discount actually applied to a basket is the minimum of the count-based tier and every selected item's band. The floor prices themselves are never published; see docs/CATALOGUE.md.",
+    "enabled": true,
+    "max_items": 25,
+    "round_to": 5,
+    "tiers": [
+      {"min_items": 2, "discount_pct": 0.05},
+      {"min_items": 3, "discount_pct": 0.10},
+      {"min_items": 5, "discount_pct": 0.15}
+    ]
+  },
+
+  "pickup_incentive": {
+    "_comment": "Dollar discount offered for local pickup, derived from cost avoided. Capped as a fraction of current price.",
+    "enabled": true,
+    "base": 0,
+    "per_lb_over_30": 0.35,
+    "weight_threshold_lbs": 30,
+    "oversize_cuft_threshold": 8,
+    "oversize_bonus": 15,
+    "stairs_bonus": 20,
+    "disassembly_bonus": 25,
+    "two_person_bonus": 25,
+    "truck_required_bonus": 30,
+    "difficult_access_bonus": 15,
+    "avoided_disposal_bonus": 20,
+    "urgency_bonus": 15,
+    "max_pct_of_price": 0.25,
+    "max_absolute": 150,
+    "round_to": 5
+  },
+
+  "fees": {
+    "_comment": "Effective seller cost as a fraction of sale price, INCLUDING payment processing where the platform bundles it. Used only to estimate net proceeds.",
+    "_verified": "Checked via web search on 2026-08-02. Platforms change fees often - re-verify before relying on these for a large sale. Sources listed in docs/estate/MARKETPLACES.md.",
+    "_verified_date": "2026-08-02",
+    "ebay": 0.136,
+    "ebay_clothing": 0.153,
+    "poshmark": 0.20,
+    "depop": 0.033,
+    "grailed": 0.125,
+    "etsy": 0.065,
+    "reverb": 0.082,
+    "discogs": 0.09,
+    "chairish": 0.30,
+    "chairish_consignor": 0.40,
+    "facebook_marketplace_local": 0.0,
+    "offerup_local": 0.0,
+    "craigslist": 0.0,
+    "nextdoor": 0.0
+  }
+}

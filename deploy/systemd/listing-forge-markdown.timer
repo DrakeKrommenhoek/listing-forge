@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the listing-forge markdown evaluation every morning
+
+[Timer]
+OnCalendar=*-*-* 07:30:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=listing-forge daily markdown evaluation
+Documentation=file:///opt/listing-forge/README.md
+
+[Service]
+Type=oneshot
+User=listingforge
+Group=listingforge
+WorkingDirectory=/opt/listing-forge
+EnvironmentFile=/opt/listing-forge/.env
+ExecStart=/opt/listing-forge/.venv/bin/python scripts/estate_markdown.py --apply
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/listing-forge/data
+SyslogIdentifier=listing-forge-markdown

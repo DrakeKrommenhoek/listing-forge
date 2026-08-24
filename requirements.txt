@@ -1,0 +1,18 @@
+# Core (item pipeline, review API, static site generation)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+python-multipart>=0.0.9
+
+# Telegram intake
+python-telegram-bot>=21.0
+
+# Optional, imported lazily -- only needed if you use these code paths
+Pillow>=10.0          # web image generation / EXIF stripping (images.py)
+openpyxl>=3.1          # inventory .xlsx export (exporter.py)
+anthropic>=0.30        # AnthropicVisionProvider (vision.py)
+openai>=1.35           # OpenAIVisionProvider (vision.py)
+
+# Dev
+pytest>=8.0
+pytest-asyncio>=0.23
